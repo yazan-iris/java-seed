@@ -10,6 +10,7 @@
                 }
                 SeedDataHeader header = DataBlocketteFactory.createHeader(recordBytes);
                 System.out.println(header.getNetwork()+"/"+header.getStation()+"/"+header.getLocation()+"/"+header.getChannel()+":"+header.getStart().format());
+        Instant endTime = DateTimeUtil.computeEndTime(header, null, null);
             }
         }
 ```
